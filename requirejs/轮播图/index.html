@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<script src="../../js文件/require.js" data-main="js/index"></script>
+	<style>
+		.carousel-container{
+			width: 700px;
+			height: 500px;
+			margin: 50px auto;
+			position: relative;
+			overflow: hidden;
+		}
+		.carousel-content img{
+			display: none;
+			width: 700px;
+			height: 500px;
+		}
+		.carousel-content img.selected{
+			display: block;
+		}
+		.carousel-tab{
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			list-style: none;
+		}
+		.carousel-tab li{
+			width: 20px;
+			height: 20px;
+			float: left;
+			margin-right: 5px;
+			text-align: center;
+			line-height: 20px;
+			cursor: pointer;
+			background: #7FEBC2;
+			color: #000;
+		}
+		.carousel-tab li.circle{
+			border-radius: 50%;
+		}
+		.carousel-tab .selected{
+			background: #E50019;
+		}
+		.carousel-arrow{
+			position: absolute;
+			left: 20px;
+			bottom:25px;
+		}
+		.carousel-arrow span{
+			float: left;
+			width: 20px;
+			height: 20px;
+			background: #DCEE11;
+			color: #000000;
+			text-align: center;
+			line-height: 20px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+<!-- 	<div class="carousel-container">
+		<div class="carousel-content">
+
+		</div>
+
+		<ul class="carousel-tab">
+			<li class="selected">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+
+		<div class="carousel-arrow">
+			<span class="carousel-prev">&lt;</span>
+			<span class="carousel-next">&gt;</span>
+		</div>	
+	</div> -->
+	<div id="content1"></div>
+	<div id="content2"></div>
+</body>
+</html>
