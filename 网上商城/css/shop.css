@@ -1,0 +1,295 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,ol{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+/*header样式*/
+#header{
+	width: 100%;
+	height: 105px;
+	background: url("../images/headerbg.png");
+}
+
+#hbody{
+	width: 990px;
+	height: 105px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#logo{
+	float: left;
+}
+
+.sel{
+	float: left;
+	position: absolute;
+	left: 198px;
+	top: 20px;
+}
+
+#inputSearch{
+	border: solid 1px black;
+	color: #999999;
+	font-size: 14px;
+	width: 200px;
+	height: 30px;
+}
+
+/*切换皮肤*/
+#skin { 
+	float:right; 
+	margin:10px; 
+	padding:4px; 
+	width:120px; 
+}
+#skin li { 
+	float:left; 
+	margin-right:4px; 
+	width:15px; 
+	height:15px; 
+	text-indent:-9999px; 
+	overflow:hidden; 
+	display:block; 
+	cursor:pointer; 
+	background-image:url("../images/theme.gif"); 
+}
+#skin_0 { background-position:0px 0px; }
+#skin_1 { background-position:15px 0px; }
+#skin_2 { background-position:35px 0px; }
+#skin_3 { background-position:55px 0px; }
+#skin_4 { background-position:75px 0px; }
+#skin_5 { background-position:95px 0px; }
+#skin_0.selected { background-position:0px 15px; }
+#skin_1.selected { background-position:15px 15px; }
+#skin_2.selected { background-position:35px 15px; }
+#skin_3.selected { background-position:55px 15px; }
+#skin_4.selected { background-position:75px 15px; }
+#skin_5.selected { background-position:95px 15px; }
+
+/*导航菜单*/
+#daohang{
+	width: 990px;
+	height: 37px;
+	background: #393939;
+	position: absolute;
+	left: 0;
+	top: 68px;
+}
+#daohang .nav {
+	display: inline;
+	float: left;
+	margin-left: 25px;
+	height: 100%;
+}
+#daohang .nav li{
+	float: left;
+	margin-right: 20px;
+	height: 100%;
+	line-height: 37px;
+}
+#daohang .nav li a{
+	color: white;
+}
+.fuck {
+	background: #FFFFFF;
+	border: 1px solid #B1B1B1;
+	border-top: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 37px;
+	width: 474px;
+	z-index: 1000;
+	/*display: none;*/
+}
+/*主体样式*/
+#container{
+	/*background: green;*/
+	width: 990px;
+	height: 580px;
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+}
+
+#left-menu{
+	/*background: #000;*/
+	width: 187px;
+	height: 580px;
+	float: left;
+}
+
+#content{
+	/*background: #000;*/
+	width: 800px;
+	height: 580px;
+	float: right;
+}
+
+#gif{
+	width: 550px;
+	height: 321px;
+	/*background: red;*/
+	float: left;
+	margin-left: 10px;
+	position: relative;
+}
+
+#notice{
+	width: 230px;
+	height: 321px;
+	float: right;
+	/*background: red;*/
+}
+
+#brand{
+	width: 790px;
+	height: 230px;
+	background: blue;
+	float: right;
+	margin-top: 10px;
+}
+
+/*商品分类*/
+#jnCatalog h2{
+	width: 187px;
+	height: 30px;
+	background-color: #6E6E6E;
+	color: white;
+	font-size: 14px;
+	line-height: 30px;
+	text-indent: 13px;
+}
+
+.jnCatainfo{
+	border: 1px solid #6E6E6E;
+	border-style: none solid solid;
+	border-width: 0 1px 1px;
+	height: 524px;
+	overflow: hidden;
+	padding: 5px 10px 0;
+	width: 165px;
+}
+
+.jnCatainfo ul{
+	float: left;
+	padding: 0 2px 8px;
+}
+
+.jnCatainfo li {
+	color: #AEADAE;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	width: 79px;
+	overflow: hidden;
+	position: relative;
+}
+
+.jnCatainfo h3 {
+	border-bottom: 1px solid #EEEEEE;
+	height: 24px;
+	line-height: 24px;
+	width: 164px;
+	font-size: 100%;
+}
+.jnCatainfo a{
+	color: black;
+	font-size: 12px;
+}
+.clear {
+	clear: both;
+	float: none;
+	height: 0;
+	overflow: hidden;
+}
+/*轮播图*/
+
+#gif img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 550px;
+}
+
+#gif div {
+	bottom: 0;
+	overflow: hidden;
+	position: absolute;
+	float: left;
+}
+
+#gif div a {
+	background-color: #444444;
+	color: #FFFFFF;
+	display: inline-block;
+	float: left;
+	height: 32px;
+	margin-right: 1px;
+	overflow: hidden;
+	padding: 5px 15px;
+	text-align: center;
+	width: 79px;
+	font-size: 12px;
+}
+
+/*侧边栏*/
+
+#c3 {
+	float: left;
+	height: 176px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 230px;
+}
+/*侧边栏c3动画*/
+#c3 .abc img{
+	transition: 1s all;
+}
+
+#c3 .abc:hover img{
+	transform: rotate(3600deg);
+}
+/*侧边栏导航*/
+
+#news {
+	float: left;
+	border: 1px solid #DFDFDF;
+	height: 133px;
+	overflow: hidden;
+	width: 228px;
+}
+
+#news h2 {
+	height: 23px;
+	line-height: 23px;
+	border-bottom: 1px solid #DFDFDF;
+	text-indent: 12px;
+	font-size: 12px;
+}
+
+#news ul {
+	float: left;
+	padding: 6px 2px 0 12px;
+}
+
+#news ul li{
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	font-size: 14px;
+}
+/*结尾*/
+#footer {
+	margin: 0 auto;
+	width: 990px;
+	color: #666666;
+	padding: 18px 0;
+	text-align: center;
+}
