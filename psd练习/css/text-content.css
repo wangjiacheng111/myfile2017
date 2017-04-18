@@ -1,0 +1,21 @@
+.text{
+	height: 492px;
+}
+
+.text-content{
+	width: 1002px;
+	margin: 0 auto;
+	overflow: hidden;
+	display: -webkit-box;
+}
+
+.con{
+	/*float: left;*/
+	-webkit-box-flex: 1;
+	height: 50px;
+	background: #f00;
+}
+
+#fuck1{
+	-moz-box-flex: 1;
+}
